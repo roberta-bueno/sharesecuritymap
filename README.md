@@ -28,9 +28,28 @@ This guide provides an overview of how to create share folders, security groups 
    <p align="center">
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7c829d1f-e6bf-414a-b9b3-3af2b56cd7cf" height="60%" width="60%" alt="SG" /></p>
 
-  To add the members to the security groups go to active directory users and computers/HR security group/members/add (Add desired user, in this case, Patty)
+  To add the members to the security groups go to active directory users and computers/HR security group/members/add (Add desired user, in this case, Patty).
+  In this case Patty is added to both Personal and HR. To confirm the groups Patty is member of, go to active directory users and computers, look for the user Patty, right clik on it, go to member of and you can see the groups there.
   <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/544e54b5-b8bc-4367-87ab-bedd905c07b9" height="60%" width="60%" alt="SG" /></p>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/544e54b5-b8bc-4367-87ab-bedd905c07b9" height="60%" width="60%" alt="Add member" /></p>
+   <p align="center">
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/10db1670-4f59-4406-9175-6e2bc539c784" height="60%" width="60%" alt="member" /></p>
+
+  <h3>Permissioning the Folders</h3>
+    - Go to this PC, Local Disk, Shares, choose the share folder you want to add permissions to, right click on it, click properties, go to security tab, choose advance.<br/>
+    - Click on disable inheritance, convert inherited permissions into explicit permissions on this object.<br/>
+    - Remove "users", and add helpdesk (in my labs an user who has access to server manager and specific features.) and Personal to it<br/>
+    - Go to Personal shared folder, right click on it, click properties/sharing/choose read and write for Personal click share.
+    - Repeat the same steps for HR folder.
+
+    (add images)
+    
+    
+  
+  
+
+  
+
   
 
 
