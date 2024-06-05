@@ -1,10 +1,10 @@
-<h1>Shared Folders, Security Group and Map Drives </h1>
-This guide provides an overview of how to create shared folders, security groups and two ways of how to map a drive.<br />
+<h1>Share Folders, Security Group and Map Drives </h1>
+This guide provides an overview of how to create share folders, security groups and two ways of how to map a drive.<br />
 
 
 <h3>Creating a shared folder</h3>
-  - Go to server manager/file and storage services/shares/right click on  share/new share - SMB share quick.
-  - Choose the share name 
+  - Go to server manager/file and storage services/shares/right click on  share/new share - SMB share quick.<br />
+  - Choose the share name <br />
   For this guide's purpose I'm creating two, one named Personal and one named HR.
   <p align="center">
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/31db343e-180b-4dad-9c06-754564223c3e" height="60%" width="60%" alt="Server Manager" /></p>
