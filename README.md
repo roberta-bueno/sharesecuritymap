@@ -36,13 +36,13 @@ This guide provides an overview of how to create share folders, security groups 
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/10db1670-4f59-4406-9175-6e2bc539c784" height="60%" width="60%" alt="member" /></p>
 
   <h3>Permissioning the Folders</h3>
-    - Go to this PC, Local Disk, Shares, choose the share folder you want to add permissions to, right click on it, click properties, go to security tab, choose advance.<br/>
+    - Go to this PC, Local Disk, Shares, choose the share folder you want to add permissions to, right click on it, click properties, go to security tab, choose advanced.<br/>
     - Click on disable inheritance, convert inherited permissions into explicit permissions on this object.<br/>
     - Remove "users", and add helpdesk (in my labs an user who has access to server manager and specific features.) and Personal to it<br/>
-    - Go to Personal shared folder, right click on it, click properties/sharing/choose read and write for Personal click share.
+    - Go to Personal shared folder, right click on it, click properties/sharing/choose read and write for Personal click share. <br/>
     - Repeat the same steps for HR folder.
 
-    (add images)
+    add images
     
     
   
