@@ -17,6 +17,19 @@ This guide provides an overview of how to create share folders, security groups 
   <p align="center">
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/8df36857-d24c-43a0-9a86-4f81d549eabc" height="60%" width="60%" alt="Shares" /></p>
 
+  <h3>Creating Security Groups</h3>
+  For this guide, I'm creating two security groups, with same names of share folders.<br/>
+  - Go to active directory users and computers/right click on users/new/group (HR).
+  - Go to active directory users and computers/right click on users/new/group (Personal).
+  <p align="center">
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7e7b190a-554f-4227-8396-107ceae360bc" height="60%" width="60%" alt="Server Manager" /></p>
+  <p align="center">
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/6f5829f1-567b-4f08-81c6-5c353962952d" height="60%" width="60%" alt="Server Manager" /></p>
+
+
+
+  
+
 
 
 
