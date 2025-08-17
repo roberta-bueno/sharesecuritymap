@@ -2,7 +2,7 @@
 
 <p>
 This guide demonstrates how to create <b>shared folders</b>, configure <b>security groups</b>, set permissions, and map drives in a <b>Windows Server</b> environment.  
-The goal is to showcase hands-on skills in <b>server administration</b>, <b>Active Directory management</b>, and <b>network resource configuration</b>.
+The goal is to showcase hands-on skills in <b>server administration</b>, <b>active directory management</b>, and <b>network resource configuration</b>.
 </p>
 
 <hr/>
