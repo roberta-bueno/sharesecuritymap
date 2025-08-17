@@ -42,6 +42,12 @@ The goal is to showcase hands-on skills in <b>server administration</b>, <b>acti
   <li>Create groups matching your shares: <b>Personal</b> and <b>HR</b>.</li>
   <li>Add members to the groups (e.g., user <b>Patty</b> belongs to both groups).</li>
 </ul>
+To add members to the groups:
+<ul>
+  <li>Go to the security group (e.g., <b>HR</b>) → <b>Members → Add</b>.</li>
+  <li>Select the user to add (e.g., <b>Patty</b>).</li>
+  <li>To verify, find the user in ADUC (e.g., <b>Patty</b>) → right-click → <b>Properties → Member Of</b> tab. You can see all the groups the user belongs to.</li>
+</ul>
 <p align="center">
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7e7b190a-554f-4227-8396-107ceae360bc" height="60%" width="60%" alt="Security Group HR"/>
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/6f5829f1-567b-4f08-81c6-5c353962952d" height="60%" width="60%" alt="Security Group Personal"/>
