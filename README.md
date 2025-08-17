@@ -27,6 +27,7 @@ The goal is to showcase hands-on skills in <b>server administration</b>, <b>acti
   <li>Open <b>Server Manager → File and Storage Services → Shares</b>.</li>
   <li>Right-click <b>Shares → New Share → SMB Share – Quick</b>.</li>
   <li>Name the share (for this example: <b>Personal</b> and <b>HR</b>).</li>
+  (You can change the path/location if desired)
 </ul>
 <p align="center">
   <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/31db343e-180b-4dad-9c06-754564223c3e" height="60%" width="60%" alt="Server Manager"/>
