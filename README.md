@@ -62,23 +62,3 @@ The goal is to showcase hands-on skills in <b>server administration</b>, <b>Acti
 </ul>
 
 <hr/>
-
-<h2>📌 Step 4: Map Network Drives</h2>
-<ul>
-  <li><b>Method 1: Using File Explorer</b>
-    <ul>
-      <li>Open <b>File Explorer → This PC → Map Network Drive</b>.</li>
-      <li>Select a drive letter and enter the folder path (e.g., <code>\\ServerName\Personal</code>).</li>
-      <li>Optionally check <b>Reconnect at sign-in</b>.</li>
-    </ul>
-  </li>
-  <li><b>Method 2: Using Command Prompt</b>
-    <ul>
-      <li>Open <b>Command Prompt</b> as Administrator.</li>
-      <li>Run <code>net use Z: \\ServerName\Personal /persistent:yes</code> (replace Z: with desired drive letter).</li>
-    </ul>
-  </li>
-</ul>
-
-<hr/>
-
