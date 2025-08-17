@@ -65,8 +65,6 @@ In server manager:
   <li>Right-click the shared folder → <b>Properties → Permission → Customize Permissions</b>.</li>
   <li>Disable inheritance and convert inherited permissions to explicit permissions.</li>
   <li>Remove default <code>Users</code> group and add <code>Helpdesk</code> plus the corresponding security group.</li>
-  <li>Go to <b>Sharing → Share → Read/Write</b> for the assigned group.</li>
-  <li>Repeat for all shared folders.</li>
 </ul>
 
 <hr/>
