@@ -60,8 +60,9 @@ To add members to the groups:
 <hr/>
 
 <h2>📌 Step 3: Configure Folder Permissions</h2>
+In server manager:
 <ul>
-  <li>Right-click the shared folder → <b>Properties → Security → Advanced</b>.</li>
+  <li>Right-click the shared folder → <b>Properties → Permission → Customize Permissions</b>.</li>
   <li>Disable inheritance and convert inherited permissions to explicit permissions.</li>
   <li>Remove default <code>Users</code> group and add <code>Helpdesk</code> plus the corresponding security group.</li>
   <li>Go to <b>Sharing → Share → Read/Write</b> for the assigned group.</li>
