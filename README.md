@@ -1,64 +1,84 @@
-<h1>Share Folders, Security Group and Map Drives </h1>
-This guide provides an overview of how to create share folders, security groups and two ways of how to map a drive.<br />
+<h1>🗂️ Shared Folders, Security Groups, and Drive Mapping</h1>
 
+<p>
+This guide demonstrates how to create <b>shared folders</b>, configure <b>security groups</b>, set permissions, and map drives in a <b>Windows Server</b> environment.  
+The goal is to showcase hands-on skills in <b>server administration</b>, <b>Active Directory management</b>, and <b>network resource configuration</b>.
+</p>
 
-<h3>Creating a shared folder</h3>
-  - Go to server manager/file and storage services/shares/right click on  share/new share - SMB share quick.<br />
-  - Choose the share name <br />
-  For this guide's purpose I'm creating two, one named Personal and one named HR.
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/31db343e-180b-4dad-9c06-754564223c3e" height="60%" width="60%" alt="Server Manager" /></p>
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/f67f6fca-d862-4e62-81be-b20ead727b3f" height="60%" width="60%" alt="File Storage" /></p>
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/06902505-4000-4816-827d-ce58004c6f4e" height="60%" width="60%" alt="Share Name" /></p>
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/58ad9ed9-4f65-4f23-b301-b53d02de915a" height="60%" width="60%" alt="Share Name" /></p>
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/8df36857-d24c-43a0-9a86-4f81d549eabc" height="60%" width="60%" alt="Shares" /></p>
+<hr/>
 
-  <h3>Creating Security Groups</h3>
-  For this guide, I'm creating two security groups, with same names of share folders.<br/>
-  - Go to active directory users and computers/right click on users/new/group (HR).<br/>
-  - Go to active directory users and computers/right click on users/new/group (Personal).<br/>
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7e7b190a-554f-4227-8396-107ceae360bc" height="60%" width="60%" alt="SG" /></p>
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/6f5829f1-567b-4f08-81c6-5c353962952d" height="60%" width="60%" alt="SG" /></p>
-   <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7c829d1f-e6bf-414a-b9b3-3af2b56cd7cf" height="60%" width="60%" alt="SG" /></p>
+<h2>⚙️ Platforms and Technologies</h2>
+<ul>
+  <li>Windows Server 2016</li>
+  <li>Server Manager & Active Directory Users and Computers (ADUC)</li>
+</ul>
 
-  To add the members to the security groups go to active directory users and computers/HR security group/members/add (Add desired user, in this case, Patty).
-  In this case Patty is added to both Personal and HR. To confirm the groups Patty is member of, go to active directory users and computers, look for the user Patty, right clik on it, go to member of and you can see the groups there.
-  <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/544e54b5-b8bc-4367-87ab-bedd905c07b9" height="60%" width="60%" alt="Add member" /></p>
-   <p align="center">
-  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/10db1670-4f59-4406-9175-6e2bc539c784" height="60%" width="60%" alt="member" /></p>
+<h2>🛠️ Required Components</h2>
+<ul>
+  <li>Windows Server with administrative access</li>
+  <li>Users to assign to security groups</li>
+  <li>Shared folders on the server</li>
+</ul>
 
-  <h3>Permissioning the Folders</h3>
-    - Go to this PC, Local Disk, Shares, choose the share folder you want to add permissions to, right click on it, click properties, go to security tab, choose advanced.<br/>
-    - Click on disable inheritance, convert inherited permissions into explicit permissions on this object.<br/>
-    - Remove "users", and add helpdesk (in my labs an user who has access to server manager and specific features.) and Personal to it<br/>
-    - Go to Personal shared folder, right click on it, click properties/sharing/choose read and write for Personal click share. <br/>
-    - Repeat the same steps for HR folder.
+<hr/>
 
-    add images
-    
-    
-  
-  
+<h2>📌 Step 1: Create Shared Folders</h2>
+<ul>
+  <li>Open <b>Server Manager → File and Storage Services → Shares</b>.</li>
+  <li>Right-click <b>Shares → New Share → SMB Share – Quick</b>.</li>
+  <li>Name the share (for this example: <b>Personal</b> and <b>HR</b>).</li>
+</ul>
+<p align="center">
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/31db343e-180b-4dad-9c06-754564223c3e" height="60%" width="60%" alt="Server Manager"/>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/f67f6fca-d862-4e62-81be-b20ead727b3f" height="60%" width="60%" alt="File Storage"/>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/06902505-4000-4816-827d-ce58004c6f4e" height="60%" width="60%" alt="Share Name"/>
+</p>
 
-  
+<hr/>
 
-  
+<h2>📌 Step 2: Create Security Groups</h2>
+<ul>
+  <li>Open <b>Active Directory Users and Computers → Users → New → Group</b>.</li>
+  <li>Create groups matching your shares: <b>Personal</b> and <b>HR</b>.</li>
+  <li>Add members to the groups (e.g., user <b>Patty</b> belongs to both groups).</li>
+</ul>
+<p align="center">
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7e7b190a-554f-4227-8396-107ceae360bc" height="60%" width="60%" alt="Security Group HR"/>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/6f5829f1-567b-4f08-81c6-5c353962952d" height="60%" width="60%" alt="Security Group Personal"/>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/7c829d1f-e6bf-414a-b9b3-3af2b56cd7cf" height="60%" width="60%" alt="Groups Overview"/>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/544e54b5-b8bc-4367-87ab-bedd905c07b9" height="60%" width="60%" alt="Add Member"/>
+  <img src="https://github.com/roberta-bueno/sharesecuritymap/assets/135675237/10db1670-4f59-4406-9175-6e2bc539c784" height="60%" width="60%" alt="Member Confirmation"/>
+</p>
 
+<hr/>
 
-  
+<h2>📌 Step 3: Configure Folder Permissions</h2>
+<ul>
+  <li>Right-click the shared folder → <b>Properties → Security → Advanced</b>.</li>
+  <li>Disable inheritance and convert inherited permissions to explicit permissions.</li>
+  <li>Remove default <code>Users</code> group and add <code>Helpdesk</code> plus the corresponding security group.</li>
+  <li>Go to <b>Sharing → Share → Read/Write</b> for the assigned group.</li>
+  <li>Repeat for all shared folders.</li>
+</ul>
 
+<hr/>
 
+<h2>📌 Step 4: Map Network Drives</h2>
+<ul>
+  <li><b>Method 1: Using File Explorer</b>
+    <ul>
+      <li>Open <b>File Explorer → This PC → Map Network Drive</b>.</li>
+      <li>Select a drive letter and enter the folder path (e.g., <code>\\ServerName\Personal</code>).</li>
+      <li>Optionally check <b>Reconnect at sign-in</b>.</li>
+    </ul>
+  </li>
+  <li><b>Method 2: Using Command Prompt</b>
+    <ul>
+      <li>Open <b>Command Prompt</b> as Administrator.</li>
+      <li>Run <code>net use Z: \\ServerName\Personal /persistent:yes</code> (replace Z: with desired drive letter).</li>
+    </ul>
+  </li>
+</ul>
 
+<hr/>
 
- 
-
-
-  
