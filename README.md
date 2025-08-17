@@ -1,4 +1,4 @@
-<h1>🗂️ Shared Folders, Security Groups, and Drive Mapping</h1>
+<h1>🗂️ Shared Folders, Security Groups, and Folder Permissions</h1>
 
 <p>
 This guide demonstrates how to create <b>shared folders</b>, configure <b>security groups</b>, set permissions, and map drives in a <b>Windows Server</b> environment.  
